@@ -1,0 +1,17 @@
+#login {
+    padding-top:15%
+}
+
+#feedback-user {
+    margin-left : auto;
+    margin-right : auto;
+    top: 50px;
+    width : 50%;
+}
+
+#text-password { 
+    margin-left : auto;
+    margin-right : auto;
+    top: 50%;
+    width : 50%
+}
