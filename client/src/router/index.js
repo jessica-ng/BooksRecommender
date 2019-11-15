@@ -4,6 +4,8 @@ import Home from '../views/Home.vue';
 import Test from '../components/test.vue';
 import Login from '../components/Login/Login.vue';
 import SignUp from '../components/SignUp/SignUp.vue';
+import BookCard from '../components/BookCard/BookCard.vue';
+import SubmitRatings from '../components/SubmitRatings/SubmitRatings.vue';
 
 Vue.use(VueRouter);
 
@@ -35,6 +37,16 @@ const routes = [
     path: '/signup',
     name: 'SignUp',
     component: SignUp,
+  },
+  {
+    path: '/books',
+    name: 'BookCard',
+    component: BookCard,
+  },
+  {
+    path: '/submitRatings',
+    name: 'SubmitRatings',
+    component: SubmitRatings,
   },
 ];
 

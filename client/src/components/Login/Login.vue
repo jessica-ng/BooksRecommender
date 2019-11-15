@@ -59,6 +59,10 @@ export default {
             })
                 .then(function (response) {
                 console.log(response.data);
+                if(response.data == true){
+                    console.log("yay");
+                    sessionStorage.userId = 1;
+                }
                 })
 
                 .catch(function (error) {
