@@ -1,0 +1,74 @@
+.books_img{
+    height : 200px;
+    width : 130px;
+    margin : auto;
+
+}
+
+.books{
+    display: grid;
+    grid-template-rows: auto auto auto auto;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.book_selection{
+    display: grid;
+    padding-top : 2%;
+    position: relative;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    max-width: 50%;
+    grid-column-gap: 35px;
+    grid-row-gap: 35px;
+    margin-left: auto;
+    margin-right: auto;
+    overflow-y: scroll;
+    height: 600px;
+    
+}
+
+.booksActive{
+    opacity: 0.5 !important;
+    /* transform: scale(0.98, 0.98) translateX(-51%) */
+  }
+
+.description{
+    padding-top : 6%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.button{
+    margin-left: auto;
+    margin-right: auto;
+    padding-top : 0 !important;
+}
+
+.book_names{
+    padding-top : 7%;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+  /* width */
+  ::-webkit-scrollbar {
+    z-index: 5;
+    width: 4px;
+    height: 216px;
+    background: rgba(0,0,0,0.38);
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #888; 
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+  }

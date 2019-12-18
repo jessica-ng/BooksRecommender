@@ -3,4 +3,5 @@
     position: fixed;
     background: #0f0c0c;
     width: 100%;
+    z-index: 1;
 }

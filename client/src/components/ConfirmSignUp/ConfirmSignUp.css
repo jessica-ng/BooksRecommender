@@ -1,0 +1,19 @@
+.image{
+    padding-top : 3%
+}
+
+.onboarding_cont{
+    padding-top : 7%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.button{
+    padding-top : 5%;
+    
+}
+
+.b-button{
+    background-color :  rgba(252,72,80,0.57) !important;
+    border-color : rgba(252,72,80,0.57) !important;
+}

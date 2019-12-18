@@ -1,30 +1,44 @@
 <template>
   <div id="app">
-    <!-- <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">Profile</router-link> |
-      <router-link to="/login">Login</router-link>
-    </div>
-     -->
-     
-    <NavBar/>
-    <router-view/>
+    <NavBar ref="nav" />
+
+    <router-view />
   </div>
 </template>
 
 <script>
-import NavBar from '@/components/NavBar/NavBar.vue'
+import NavBar from "@/components/NavBar/NavBar.vue";
 
 export default {
-    components: {
-        NavBar
-      }
-}
+  components: {
+    NavBar
+  },
+  updated() {
+    this.$refs.nav.update_nav();
+  },
+  created() {
+    //this.initiate()
+  },
+  methods: {
+    initiate: function() {
+      const path = "http://localhost:5000/initiate";
+      axios
+        .get(path, {})
+        .then(function(response) {
+          console.log(response);
+        })
+
+        .catch(function(error) {
+          console.log(error);
+        });
+    }
+  }
+};
 </script>
 
 <style screen>
 #app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+  font-family: "Avenir", Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
