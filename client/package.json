@@ -14,7 +14,7 @@
     "bootstrap-vue": "^2.0.4",
     "core-js": "^3.3.2",
     "node-sass": "^4.13.0",
-    "postcss": "^7.0.21",
+    "postcss": "^8.2.10",
     "postcss-load-config": "^2.1.0",
     "register-service-worker": "^1.6.2",
     "sass-loader": "^8.0.0",
